@@ -1,13 +1,170 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.header {
+  background-color: #fbb6a7;
+  color: #ffffff;
+}
+
+.header > img {
+  height: 15%;
+  width: 15%;
+  margin-left: 15%;
+}
+
+.header-info {
+  display: inline;
+  float: right;
+  margin-right: 20px;
+}
+.sun {
+  color: yellow;
+}
+.moon {
+  color: black;
+}
+
+h1 {
+  font-size: 2.5vw;
+}
+
+h2 {
+  text-align: end;
+  font-size: 1.5vw;
+}
+
+.sidebar {
+  background-color: #574fd8;
+  position: fixed;
+  width: 14%;
+  height: 100%;
+}
+.user {
+  margin: auto;
+  width: 60%;
+  padding: 20px;
+}
+
+.user-icon {
+  display: inline-flex;
+  background-color: #fbb6a7;
+  color: #ffffff;
+  border-radius: 50%;
+  height: 5vw;
+  width: 5vw;
+  margin:  0 20px;
+}
+
+.user > p {
+  text-align: center;
+  font-size: 1.3vw;
+  line-height: 0.2;
+  color: #ffffff;
+}
+
+
+
+.sidebar-item {
+  padding: 20px 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidebar-item:hover {
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 2555, 0.3),
+    rgb(255, 255, 2555, 0.03)
+  );
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.sidebar-item:active {
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 2555, 0.3),
+    rgb(255, 255, 2555, 0.03)
+  );
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.sidebar-item > a {
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.sidebar-item-text {
+  margin-left: 20px;
+}
+
+.data{
+  margin-left: 15% ;
+  margin-top: 15%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* X-Small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .sidebar-item {
+     margin: auto;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+  .sidebar-item-text,
+  .user > p {
+    display: none;
+  }
+  .sidebar-item {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .user-icon {
+    margin: auto;
+  }
+}
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+  .header-info{
+    padding: auto;
+  }
+}
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+}
+
+/* X-Large devices (large desktops, less than 1400px)*/
+@media (max-width: 1399.98px) {
 }
